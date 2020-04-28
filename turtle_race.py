@@ -1,4 +1,5 @@
 from turtle import Turtle
+from random import randint
 
 laura = Turtle()
 laura.color('red')
@@ -27,3 +28,12 @@ rik.shape('turtle')
 rik.penup()
 rik.goto(-160,10)
 rik.pendown()
+
+for movement in range(100):
+    laura.forward(randint(1,5))
+    peter.forward(randint(1,5))
+    lethal.forward(randint(1,5))
+    rik.forward(randint(1,5))
+
+
+input("Press Enter to close")
