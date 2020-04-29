@@ -2,6 +2,8 @@ from turtle import *
 from random import randint
 
 speed(10)
+
+
 penup()
 goto(-140,140)
 for step in range(15):
