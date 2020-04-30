@@ -5,6 +5,11 @@ speed(10)
 
 
 penup()
+
+file_obj = open("asciiart.txt")
+x = file_obj.read()
+print (x) 
+
 goto(-140,140)
 for step in range(15):
     write(step, align="center")
