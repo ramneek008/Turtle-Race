@@ -37,6 +37,8 @@ laura.color('red')
 laura.shape('turtle')
 laura.penup()
 laura.goto(-160,100)
+for turn in range(4):
+    laura.right(90)
 laura.pendown()
 
 peter = Turtle()
@@ -44,6 +46,8 @@ peter.color('green')
 peter.shape('turtle')
 peter.penup()
 peter.goto(-160,50)
+for turn in range(4):
+    peter.right(90)
 peter.pendown()
 
 
@@ -52,6 +56,8 @@ rik.color('blue')
 rik.shape('turtle')
 rik.penup()
 rik.goto(-160,0)
+for turn in range(4):
+   rik.right(90)
 rik.pendown()
 
 bruno = Turtle()
@@ -59,6 +65,8 @@ bruno.color('yellow')
 bruno.shape('turtle')
 bruno.penup()
 bruno.goto(-160,-50)
+for turn in range(4):
+    bruno.right(90)
 bruno.pendown()
 
 
