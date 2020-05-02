@@ -2,8 +2,14 @@ from turtle import *
 from random import randint
 
 speed(10)
-
-
+head = Turtle()
+head.penup()
+head.goto(60,200)
+head.pendown()
+head.color('black')
+style = ('Comic Sans', 30, 'bold italic')
+head.write('Turtle Race', font=style, align='center')
+head.hideturtle()
 penup()
 
 file_obj = open("asciiart.txt")
