@@ -21,10 +21,14 @@ for step in range(15):
     write(step, align="center")
     right(90)
     forward(10)
-    pendown()
-    forward(210)
-    penup()
-    backward(220)
+    for dash in range(22):
+        speed(100)
+        if(dash%2==0):
+            pendown()
+        else:
+            penup()
+        forward(10)
+    backward(230)
     left(90)
     forward(30)
 
