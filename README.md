@@ -12,5 +12,6 @@ Run Turtle_race.py to start the game.
 ```bash
 cd [[location of the file "Turtle_race.py"]]
 python Turtle_race.py
+```
 
 It opens Python Turtle Graphics window.
