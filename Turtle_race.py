@@ -31,6 +31,16 @@ for step in range(15):
     backward(230)
     left(90)
     forward(30)
+else:
+    write(step+1, align="center")
+    right(90)
+    forward(10)
+    pendown()
+    forward(220)
+    penup()
+    backward(230)
+    left(90)
+    forward(30)
 
 laura = Turtle()
 laura.color('red')
@@ -75,6 +85,8 @@ for movement in range(150):
     peter.forward(randint(1,5))
     rik.forward(randint(1,5))
     bruno.forward(randint(1,5))
+
+
 
 
 input()
