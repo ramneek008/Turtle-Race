@@ -32,7 +32,7 @@ for step in range(15):
     left(90)
     forward(30)
 else:
-    write(step+1, align="center")
+    write('END', align="center")
     right(90)
     forward(10)
     pendown()
@@ -79,12 +79,27 @@ for turn in range(4):
     bruno.right(90)
 bruno.pendown()
 
+sum1 = sum2 = sum3 = sum4 = 0
 
 for movement in range(150):
-    laura.forward(randint(1,5))
-    peter.forward(randint(1,5))
-    rik.forward(randint(1,5))
-    bruno.forward(randint(1,5))
+    p = randint(1,5)
+    sum1 = sum1+p
+    laura.forward(p)
+
+    q = randint(1,5)
+    sum2 = sum2+q
+    peter.forward(q)
+
+    r = randint(1,5)
+    sum3 = sum3+r
+    rik.forward(r)
+
+    s = randint(1,5)
+    sum4 = sum4+s
+    bruno.forward(s)
+
+    if(sum1>=420 or sum2>=420 or sum3>=420 or sum4>=420):
+        break;
 
 
 
