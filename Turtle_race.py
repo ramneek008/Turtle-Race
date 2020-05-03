@@ -102,6 +102,12 @@ for movement in range(150):
         break;
 
 
+ranks = {'Laura (red)':sum1 , 'Peter (green)':sum2, 'Rik (blue)':sum3, 'Bruno (yellow)':sum4}
+v = list(ranks.values()) 
+k = list(ranks.keys()) 
+  
+print(k[v.index(max(v))], "wins the race.") 
+
 
 
 input()
