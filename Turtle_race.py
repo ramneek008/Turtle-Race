@@ -1,7 +1,7 @@
 from turtle import *
 from random import randint
 
-speed(10)
+speed(0)
 head = Turtle()
 head.penup()
 head.goto(60,200)
@@ -17,12 +17,11 @@ x = file_obj.read()
 print (x) 
 
 goto(-140,140)
-for step in range(15):
+for step in range(14):
     write(step, align="center")
     right(90)
     forward(10)
     for dash in range(22):
-        speed(100)
         if(dash%2==0):
             pendown()
         else:
@@ -41,6 +40,8 @@ else:
     backward(230)
     left(90)
     forward(30)
+    
+
 
 laura = Turtle()
 laura.color('red')
@@ -101,13 +102,18 @@ for movement in range(150):
     if(sum1>=420 or sum2>=420 or sum3>=420 or sum4>=420):
         break;
 
-
 ranks = {'Laura (red)':sum1 , 'Peter (green)':sum2, 'Rik (blue)':sum3, 'Bruno (yellow)':sum4}
 v = list(ranks.values()) 
 k = list(ranks.keys()) 
   
 print(k[v.index(max(v))], "wins the race.") 
 
-
+head.penup()
+head.goto(60,-200)
+head.pendown()
+head.color('black')
+style = ('Comic Sans', 20, 'italic')
+head.write(k[v.index(max(v))]+" wins the race", font=style, align='center')
+head.hideturtle()
 
 input()
